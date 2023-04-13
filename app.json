@@ -1,5 +1,5 @@
 {
-  "name": "Whisper Bot",
+  "name": "Whispevr Bot",
   "description": "Telegram bot to send whispers",
   "logo": "https://telegra.ph/file/33af12f457b16532e1383.jpg",
   "keywords": [
@@ -14,7 +14,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   },
   "addons": [
