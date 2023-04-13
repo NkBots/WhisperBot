@@ -11,6 +11,6 @@ async def start(bot, msg):
 	await bot.send_sticker(msg.chat.id, "CAACAgIAAxkBAAIal2EVKvGYCpidwcjowvL-j8zAB9RcAAK-DAACX_g4ShXqde_-mMrnHgQ")
 	await bot.send_message(
 		msg.chat.id,
-		Data.START.format{msg.from_user.mention},
+		Data.START.format(msg.from_user.mention),
 		reply_markup=InlineKeyboardMarkup(Data.buttons),
 	)
