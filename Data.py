@@ -5,56 +5,57 @@ class Data:
     # Start Message
     START = """
 Hey {}
-Welcome to {}
 
 I am the Master of Whisperers (like Varys in Game of Thrones).
 
 You can use me to send whispers to your friend in groups and channels (even if I'm not there).
 Only that friend and you will be able to read the message even though others are in same group. 
 
-To see how to use me press 'How to Use' below.
+Use help command to know how to use me
 
 By @Tellybotzz
     """
 
-    # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")],
-    ]
+        [
+        InlineKeyboardButton('🔒 Send a Whisper 🔒', switch_inline_query=""),
+        InlineKeyboardButton('🚴‍♂️ About', callback_data='about'),
+        InlineKeyboardButton('♨️ Close', callback_data='close')
+        ]
+        ]
+
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")
-        ],
-        [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton(" About ", callback_data="about")
-        ],
-        [InlineKeyboardButton(" More Amazing bots ", url="https://t.me/Tellybotzz")],
-        [InlineKeyboardButton("Owner ", url="https://t.me/Nitinsahay")],
-    ]
+        InlineKeyboardButton('♻️ Update Channel', url='https://telegram.me/tellybots_4u'),
+        InlineKeyboardButton('💬 Support Group', url='https://telegram.me/tellybots_support')
+        ],[
+        InlineKeyboardButton('❔ Help', callback_data='help'),
+        InlineKeyboardButton('♨️ Close', callback_data='close')
+        ]
+        ]
+
 
     # Help Message
     HELP = """
 Just type the message in below format in any chat.
 
-`@tellywhisperbot your_message friend_username/id`
+@Telly_WhisperBot your_message friend_username/id`
     """
 
     # About Message
     ABOUT = """
 **About This Bot** 
 
-Designed by @Tellybots_4u
+Designed by @Tellybotzz
 
-Source Code : [Click Here](https://t.me/tellybots_digital)
+Source Code : [Click Here](https://t.me/tellybotzz)
 
-Hosted on  : Heroku
+Hosted on  : Vps
 
 Framework : [Pyrogram](docs.pyrogram.org)
 
 Language : [Python](www.python.org)
 
-Developer : @Tellybots_4u
+Developer : @Tellybotzz
     """
