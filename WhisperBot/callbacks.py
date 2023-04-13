@@ -45,7 +45,7 @@ async def _callbacks(bot, callback_query: CallbackQuery):
 		cb_data = callback_query.data
 		data_list = ast.literal_eval(str(cb_data))
 		if callback_query.from_user.id in data_list:
-			specific = callback_query.inline_message_id
+			specific = callback_query.inline_id
 			q = SESSION.query(Whispers).get(specific)
 			if q:
 				await callback_query.answer(q.message, show_alert=True)
