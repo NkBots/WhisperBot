@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}.
+Hey {}
 Welcome to {}
 
 I am the Master of Whisperers (like Varys in Game of Thrones).
@@ -14,7 +14,7 @@ Only that friend and you will be able to read the message even though others are
 
 To see how to use me press 'How to Use' below.
 
-By @Tellybots_4u
+By @Tellybotzz
     """
 
     # Home Button
@@ -31,8 +31,8 @@ By @Tellybots_4u
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton(" About ", callback_data="about")
         ],
-        [InlineKeyboardButton(" More Amazing bots ", url="https://t.me/Tellybots_4u")],
-        [InlineKeyboardButton("Support Group ", url="https://t.me/Tellybots_support")],
+        [InlineKeyboardButton(" More Amazing bots ", url="https://t.me/Tellybotzz")],
+        [InlineKeyboardButton("Owner ", url="https://t.me/Nitinsahay")],
     ]
 
     # Help Message
