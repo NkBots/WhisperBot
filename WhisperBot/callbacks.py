@@ -11,14 +11,14 @@ from WhisperBot.bot_users import check_for_users
 @Client.on_callback_query()
 async def _callbacks(bot, callback_query: CallbackQuery):
 	user = await bot.get_me()
-	mention = user["mention"]
+	
 	if callback_query.data.lower() == "home":
 		chat_id = callback_query.from_user.id
 		message_id = callback_query.message.id
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=id,
-			text=Data.START.format(callback_query.from_user.mention, mention),
+			text=Data.START,
 			reply_markup=InlineKeyboardMarkup(Data.buttons),
 		)
 	elif callback_query.data.lower() == "about":
