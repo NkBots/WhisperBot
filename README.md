@@ -1,4 +1,5 @@
-# Whisper Bot [@WhisperStarkBot](https://t.me/WhisperStarkBot)
+# W
+hisper Bot [@WhisperStarkBot](https://t.me/WhisperStarkBot)
 
 > A star ⭐ from you means a lot to us!
 
